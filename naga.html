@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #4A90E2, #357ABD);
+      color: white;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero .btn {
+      background-color: white;
+      color: #4A90E2;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .hero .btn:hover {
+      background-color: #e0eefe;
+    }
+
+    /* Image + Features Section */
+    .features-section {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .features-section h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .feature img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .feature-text {
+      max-width: 600px;
+    }
+
+    @media (min-width: 768px) {
+      .feature {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .feature:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .feature-text {
+        padding: 0 20px;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #eee;
+      font-size: 0.9rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Discover the Future of Productivity</h1>
+    <p>Simple. Fast. Efficient. Everything you need in one place.</p>
+    <div class="buttons">
+      <a href="#features" class="btn">Get Started</a>
+      <a href="#learn-more" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <h2>What We Offer</h2>
+    <div class="features">
+
+      <div class="feature">
+        <img src="Cover_image_HR.png" alt="Feature 1 Image">
+        <div class="feature-text">
+          <h3>All-in-One Dashboard</h3>
+          <p>Track, manage, and optimize your workflows with a powerful dashboard designed to boost efficiency.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="Untitled.jpg" alt="Feature 2 Image">
+        <div class="feature-text">
+          <h3>Collaborate Seamlessly</h3>
+          <p>Teamwork made easy with built-in messaging, file sharing, and real-time collaboration tools.</p>
+        </div>
+      </div>
+
+      <div class="feature">
+        <img src="Untitled.png" alt="Feature 3 Image">
+        <div class="feature-text">
+          <h3>24/7 Cloud Access</h3>
+          <p>Work from anywhere at any time. Your data is always secure and accessible in the cloud.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Company Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
